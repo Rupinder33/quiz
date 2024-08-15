@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <p id="question"></p>
+        <button onclick="checkAnswer(0)" id="btn0"></button>
+        <button onclick="checkAnswer(1)" id="btn1"></button>
+        <button onclick="checkAnswer(2)" id="btn2"></button>
+        <button onclick="checkAnswer(3)" id="btn3"></button>
+        <p id="feedback"></p>
+        <button onclick="nextQuestion()" id="next-btn" style="display: none;">Next Question</button>
+    </div>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(160, 233, 234);
+        }
+
+        #quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #12a7c9;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #aaeaf4;
+        }
+
+        #feedback {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #next-btn {
+            margin-top: 20px;
+            background-color: #044653;
+        }
+
+        #next-btn:hover {
+            background-color: #044653;
+        }
+    
+    </style>
+    <script src="quiz.js"></script>
+    </body>
+    </html>
